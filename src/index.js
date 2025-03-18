@@ -23,9 +23,9 @@ root.render(
         <Route path='registor' element={<Userregistor />}></Route>
         <Route path='landing' element={<Mylandingpage />}></Route>
         <Route path='landing/employee' element={<Employeepage />}>
-          <Route path='' element={<Employeehome />}></Route>
-          <Route path='about' element={<Employeeabout/>}></Route>
-          <Route path='contact' element={<Employeecontact/>}></Route>
+          <Route path='alldata' element={<Employeehome />}></Route>
+          <Route path='about' element={<Employeeabout />}></Route>
+          <Route path='contact' element={<Employeecontact />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

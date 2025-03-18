@@ -1,23 +1,22 @@
-.mainpage
-{
-    border:1px solid red;
+.mainpage {
+    border: 1px solid red;
     min-height: 80vh;
     max-height: fit-content;
     margin-top: 60px;
 }
-.apps .card
-{
+
+.apps .card {
     width: 200px;
     height: 200px;
     transition-duration: 300ms;
 }
-.apps .card:hover
-{
-    transform:scale(1.1,1.1);
+
+.apps .card:hover {
+    transform: scale(1.1, 1.1);
     transition-duration: 300ms;
 }
-.apps a
-{
+
+.apps a {
     text-decoration: none;
 }
 

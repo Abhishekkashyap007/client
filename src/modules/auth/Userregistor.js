@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 function Userregistor() {
     const fst = 30;
 
-    const onClickHandler =()=>{
+    const onClickHandler = () => {
         toast.success('Registored Successfully..');
     }
 
@@ -81,7 +81,7 @@ function Userregistor() {
                     </div>
                 </div>
             </div>
-            <ToastContainer position="top-right" autoClose={6000}/>
+            <ToastContainer position="top-right" autoClose={6000} />
         </div>
     )
 }

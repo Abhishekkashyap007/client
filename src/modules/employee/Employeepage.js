@@ -16,12 +16,12 @@ function Employeepage() {
         <div className='container-fluid'>
             <div className='row'>
                 <div className='col-12'>
-                    <Headerpage/>
+                    <Headerpage />
                 </div>
             </div>
             <div className='row mainpage'>
                 <div className='col-md-2 bg-success'>
-                    <Sidebar/>
+                    <Sidebar />
                 </div>
                 <div className='col-md-10'>
                     <Outlet></Outlet>
@@ -29,7 +29,7 @@ function Employeepage() {
             </div>
             <div className='row'>
                 <div className='col-12'>
-                    <Footerpage/>
+                    <Footerpage />
                 </div>
             </div>
         </div>
