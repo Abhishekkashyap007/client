@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { MdOutlineStreetview, MdOutlineRateReview, MdDelete } from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
 
 function Employeehome() {
@@ -56,8 +57,8 @@ function Employeehome() {
                     <td>{d.gender}</td>
                     <td><img src={d.purl} width={30} /></td>
                     <td className='text-end'>
-                      <span className='badge text-bg-primary p-2'><MdOutlineStreetview /></span>
-                      <span className='badge text-bg-warning ms-2 p-2'><MdOutlineRateReview /></span>
+                      <Link to={'detailspage/' + d._id} className='badge text-bg-primary p-2'><MdOutlineStreetview /></Link>
+                      <Link to={'editpage/' + d._id} className='badge text-bg-warning ms-2 p-2'><MdOutlineRateReview /></Link>
                       <span className='badge text-bg-danger ms-2 p-2' onClick={() => deleterecord(d._id)}><MdDelete /></span>
                     </td>
                   </tr>

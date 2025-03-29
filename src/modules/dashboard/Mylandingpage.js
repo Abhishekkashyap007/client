@@ -1,6 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FcBusinessman } from "react-icons/fc";
+import { FcBarChart } from "react-icons/fc";
+import { FcReadingEbook } from "react-icons/fc";
+import { FcInspection } from "react-icons/fc";
+import { FcConferenceCall } from "react-icons/fc";
+import { FcCustomerSupport } from "react-icons/fc";
+import { FcSmartphoneTablet } from "react-icons/fc";
+import { FcCollaboration } from "react-icons/fc";
 
 function Mylandingpage() {
   return (
@@ -17,75 +24,75 @@ function Mylandingpage() {
                   <div className="card p-3 shadow rounded rounded-circle">
                     <p className='h1 text-center'><FcBusinessman size={75} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">Employee List</h5>
+                      <h5 className="card-title">Employee Database</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='course'>
+                <Link to='onboard'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><PiChalkboardTeacherDuotone size={50} /></p> */}
+                    <p className='h1 text-center'><FcConferenceCall size={50} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">Courses</h5>
+                      <h5 className="card-title">Employee Onboarding</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='payment'>
+                <Link to='performance'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><PiStudentFill size={50} /></p> */}
+                    <p className='h1 text-center'><FcBarChart size={50} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">Student Management</h5>
+                      <h5 className="card-title">Performance Management</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='payment'>
+                <Link to='help'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><GiTeacher size={50} /></p> */}
+                    <p className='h1 text-center'><FcCollaboration size={50} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">Classes</h5>
+                      <h5 className="card-title">Attendance Tracker</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='jsondata'>
+                <Link to='time'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><FaRupeeSign size={50} /></p> */}
+                    <p className='h1 text-center'><FcInspection size={50} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">json CRUD</h5>
+                      <h5 className="card-title">Timesheets</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='payment'>
+                <Link to='help'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><GrUserExpert size={50} /></p> */}
+                    <p className='h1 text-center'><FcReadingEbook size={50} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">Teacher Management</h5>
+                      <h5 className="card-title">Learning Management</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='payment'>
+                <Link to='schedule'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><GrNotes size={50} /></p> */}
+                    <p className='h1 text-center'><FcSmartphoneTablet size={50} /></p>
                     <div className="card-body">
-                      <h5 className="card-title">Notes</h5>
+                      <h5 className="card-title">Shift Scheduling</h5>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className='col-md-3 mt-5 text-center'>
-                <Link to='payment'>
+                <Link to='help'>
                   <div className="card p-3 shadow rounded rounded-circle">
-                    {/* <p className='h1 text-center'><FaHandsHelping size={50} /></p> */}
+                    <p className='h1 text-center'><FcCustomerSupport size={50} /></p>
                     <div className="card-body">
                       <h5 className="card-title">Help Section</h5>
                     </div>

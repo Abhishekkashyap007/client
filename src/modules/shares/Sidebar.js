@@ -4,7 +4,7 @@ function Sidebar() {
   return (
     <div className="flex-shrink-0 p-3">
       <a href="/" className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-        <span className="fs-5 fw-semibold">Collapsible</span>
+        <span className="fs-5 fw-semibold">M-System</span>
       </a>
       <ul className="list-unstyled ps-0">
         <li className="mb-1">
@@ -34,7 +34,7 @@ function Sidebar() {
         </li>
         <li className="mb-1">
           <button className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-            Orders
+            Reports
           </button>
           <div className="collapse" id="orders-collapse">
             <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">

@@ -1,6 +1,6 @@
 .mainpage {
-    border: 1px solid red;
-    min-height: 80vh;
+    /* border: 1px solid red; */
+    min-height: 79vh;
     max-height: fit-content;
     margin-top: 60px;
 }
@@ -18,6 +18,34 @@
 
 .apps a {
     text-decoration: none;
+}
+
+.mylader {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+.apps1 .card {
+    width: 300px;
+}
+
+.apps1 .card:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 300ms;
+}
+
+.MuiDataGrid-row--borderBottom,
+.css-yseucu-MuiDataGrid-columnHeaderRow {
+    background-color: skyblue !important;
+}
+
+.MuiToolbar-root,
+.MuiToolbar-gutters,
+.MuiToolbar-regular,
+.MuiTablePagination-toolbar,
+.css-1gak8h1-MuiToolbar-root-MuiTablePagination-toolbar {
+    background-color: skyblue !important;
 }
 
 .dropdown-toggle {
