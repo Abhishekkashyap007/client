@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { url } from '../apis/Myapis';
 
 function Employeedetails() {
 
@@ -9,7 +10,7 @@ function Employeedetails() {
     const [date, setdate] = useState({});
 
     const myapi = async () => {
-        await axios.get(`http://localhost:8800/singlereocrd/${id}`).then((d) => {
+        await axios.get(`${url}/singlereocrd/${id}`).then((d) => {
             console.log(d.data);
             setdate(d.data);
         })

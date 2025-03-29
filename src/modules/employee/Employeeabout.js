@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify';
+import { url } from '../apis/Myapis';
 
 function Employeeabout() {
 
@@ -28,7 +29,7 @@ function Employeeabout() {
 
 
   const submitdata = async () => {
-    await axios.post('http://localhost:8800/registor', myform).then((d) => {
+    await axios.post(`${url}/registor`, myform).then((d) => {
       // console.log(d);
       toast.success('New User Added...');
       setTimeout(() => {

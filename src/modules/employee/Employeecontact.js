@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { url } from '../apis/Myapis';
 
 function Employeecontact() {
 
@@ -28,7 +29,7 @@ function Employeecontact() {
   }
 
   const singleremocard = () => {
-    axios.get(`http://localhost:8800/singlereocrd/${id}`).then((d) => {
+    axios.get(`${url}/singlereocrd/${id}`).then((d) => {
       console.log(d.data);
       setmyform(d.data);
     })
@@ -39,7 +40,7 @@ function Employeecontact() {
   }, []);
 
   const submiteditpage = async () => {
-    await axios.patch(`http://localhost:8800/edituser/${id}`, myform).then((d) => {
+    await axios.patch(`${url}/edituser/${id}`, myform).then((d) => {
       console.log(d.data);
       customnavigate('/landing/employee');
     })

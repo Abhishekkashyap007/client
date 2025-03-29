@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { url } from '../apis/Myapis';
 
 function Loginpage() {
 
@@ -22,7 +23,7 @@ function Loginpage() {
 
     const userlogin = async () => {
         const { email, pass } = myform;
-        const datares = await fetch('http://localhost:8800/loginpage', {
+        const datares = await fetch(`${url}/loginpage`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

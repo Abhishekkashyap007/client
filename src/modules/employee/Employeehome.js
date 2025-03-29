@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { MdOutlineStreetview, MdOutlineRateReview, MdDelete } from 'react-icons/md'
 import { Link } from 'react-router-dom';
+import { url } from '../apis/Myapis';
 
 
 function Employeehome() {
@@ -9,7 +10,7 @@ function Employeehome() {
   const [mydata, setdate] = useState([]);
 
   const myapi = async () => {
-    await axios.get('http://localhost:8800/alldata').then((d) => {
+    await axios.get(`${url}/alldata`).then((d) => {
       setdate(d.data);
     })
   }
@@ -21,7 +22,7 @@ function Employeehome() {
 
 
   const deleterecord = async (id) => {
-    await axios.delete(`http://localhost:8800/removeuser/${id}`).then((d) => {
+    await axios.delete(`${url}/removeuser/${id}`).then((d) => {
       console.log(d.data);
       myapi();
     })
